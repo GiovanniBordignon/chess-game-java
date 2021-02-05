@@ -3,22 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package application;
-
-import boardgame.Board;
+package boardgame;
 
 /**
  *
  * @author giova
  */
-public class Program {
+public class Piece {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+    protected Position position;
+    private Board board;
 
-        Board board = new Board(8, 8);
+    public Piece(Board board) {
+        this.board = board;
+    }
+
+    protected Board getBoard() {
+        return board;
     }
 
 }
